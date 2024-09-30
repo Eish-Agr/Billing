@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Billing</title>
+</head>
+<body>
+    
+    <form name="passdata" class="grid" action='/insert_value' method="POST">
+    Date: <input type="date" name="date"/><br/>
+    Item ID: <input type="text" name="item"/><br/>
+    Item Name: <input type="text" name="name"/><br/>
+    Karat: <input type="text" name="karat"/><br/>
+    Today Gold Price: <input type="text" name="goldprice"/><br/>
+    Weight: <input type="text" name="Weight"/><br/>
+    Price: <input type="text" name="Price"/><br/>
+    <input type="submit" value="submit"><br/><br/><br/>
+    
+    </form>
+    <form name="getdata" class="grid" action="/get_value" method="post">   
+    Date: <input type="date" name="date2"/><br/>
+    <input type="submit" value="Get data"><br/>
+    </form>
+</body>
+</html>
